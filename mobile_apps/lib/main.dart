@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:mobile_app/ui/features/router/app_router.dart';
+import 'package:mobile_app/ui/features/routers/app_router.dart';
 
 void main() {
   runApp(const MyApp());

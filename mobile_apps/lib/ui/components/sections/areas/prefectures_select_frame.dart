@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:gap/gap.dart';
-import 'package:go_router/go_router.dart';
 
 // Project imports:
 import 'package:mobile_app/ui/components/parts/texts/sub_title.dart';
 import 'package:mobile_app/ui/components/sections/areas/area_select_section.dart';
+import 'package:mobile_app/ui/features/areas/controllers/prefectures_select_controller.dart';
 
 class PrefecturesSelectFrame extends StatelessWidget {
   const PrefecturesSelectFrame({super.key});
@@ -31,12 +31,8 @@ class PrefecturesSelectFrame extends StatelessWidget {
                 ButtonInfo(id: "5", name: '茨城'),
                 ButtonInfo(id: "6", name: '群馬'),
               ],
-              onPressedCallback: (id, name) => context.go(
-                '/prefectures',
-                extra: ButtonInfo(
-                  id: id,
-                  name: name,
-                ),
+              onPressedCallback: (id, name) => PrefecturesSelectController.tap(
+                context,
               ),
             ),
           ],

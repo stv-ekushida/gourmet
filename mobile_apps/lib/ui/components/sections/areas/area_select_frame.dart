@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 
 // Package imports:
 import 'package:gap/gap.dart';
-import 'package:go_router/go_router.dart';
 
 // Project imports:
 import 'package:mobile_app/ui/components/parts/texts/sub_title.dart';
 import 'package:mobile_app/ui/components/sections/areas/area_select_section.dart';
+import 'package:mobile_app/ui/features/areas/controllers/area_select_controller.dart';
 
 class AreaSelectFrame extends StatelessWidget {
   const AreaSelectFrame({super.key});
@@ -33,12 +33,9 @@ class AreaSelectFrame extends StatelessWidget {
                 ButtonInfo(id: "7", name: '北陸・甲信越'),
                 ButtonInfo(id: "8", name: '四国'),
               ],
-              onPressedCallback: (id, name) => context.go(
-                '/prefectures',
-                extra: ButtonInfo(
-                  id: id,
-                  name: name,
-                ),
+              onPressedCallback: (id, name) => AreaSelectController.tap(
+                context,
+                ButtonInfo(id: id, name: name),
               ),
             ),
           ],
