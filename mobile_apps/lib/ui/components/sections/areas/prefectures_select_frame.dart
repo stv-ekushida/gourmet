@@ -9,8 +9,8 @@ import 'package:go_router/go_router.dart';
 import 'package:mobile_app/ui/components/parts/texts/sub_title.dart';
 import 'package:mobile_app/ui/components/sections/areas/area_select_section.dart';
 
-class AreaSelectFrame extends StatelessWidget {
-  const AreaSelectFrame({super.key});
+class PrefecturesSelectFrame extends StatelessWidget {
+  const PrefecturesSelectFrame({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -23,15 +23,13 @@ class AreaSelectFrame extends StatelessWidget {
             const Gap(16),
             AreaSelectSection(
               buttons: [
-                ButtonInfo(id: "0", name: '関東'),
-                ButtonInfo(id: "1", name: '関西'),
-                ButtonInfo(id: "2", name: '九州・沖縄'),
-                ButtonInfo(id: "3", name: '東海'),
-                ButtonInfo(id: "4", name: '北海道'),
-                ButtonInfo(id: "5", name: '中国'),
-                ButtonInfo(id: "6", name: '東北'),
-                ButtonInfo(id: "7", name: '北陸・甲信越'),
-                ButtonInfo(id: "8", name: '四国'),
+                ButtonInfo(id: "0", name: '東京'),
+                ButtonInfo(id: "1", name: '神奈川'),
+                ButtonInfo(id: "2", name: '千葉'),
+                ButtonInfo(id: "3", name: '埼玉'),
+                ButtonInfo(id: "4", name: '栃木'),
+                ButtonInfo(id: "5", name: '茨城'),
+                ButtonInfo(id: "6", name: '群馬'),
               ],
               onPressedCallback: (id, name) => context.go(
                 '/prefectures',

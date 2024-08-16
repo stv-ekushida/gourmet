@@ -1,13 +1,18 @@
+// Flutter imports:
 import 'package:flutter/material.dart';
+
+// Project imports:
 import 'package:mobile_app/ui/components/parts/buttons/square_button.dart';
 
 class AreaSelectSection extends StatelessWidget {
   const AreaSelectSection({
     super.key,
     required this.buttons,
+    required this.onPressedCallback,
   });
 
   final List<ButtonInfo> buttons;
+  final void Function(String id, String name) onPressedCallback;
 
   @override
   Widget build(BuildContext context) {
@@ -26,12 +31,15 @@ class AreaSelectSection extends StatelessWidget {
                 child: Container(), // ボタンがない場合は空のウィジェットを表示
               );
             }
+            final buttonInfo = buttons[buttonIndex];
+
             return Expanded(
               child: Padding(
                 padding: const EdgeInsets.all(8.0),
                 child: SquareButton(
-                  onPressed: buttons[buttonIndex].onPressed,
-                  child: Text(buttons[buttonIndex].name),
+                  onPressed: () =>
+                      onPressedCallback(buttonInfo.id, buttonInfo.name),
+                  child: Text(buttonInfo.name),
                 ),
               ),
             );
@@ -43,8 +51,11 @@ class AreaSelectSection extends StatelessWidget {
 }
 
 class ButtonInfo {
+  final String id;
   final String name;
-  final VoidCallback onPressed;
 
-  ButtonInfo({required this.name, required this.onPressed});
+  ButtonInfo({
+    required this.id,
+    required this.name,
+  });
 }
