@@ -10,9 +10,7 @@ import 'package:mobile_app/ui/features/routers/screen_type.dart';
 class PrefecturesSelectController {
   const PrefecturesSelectController._();
 
-  static void tap(BuildContext context) {
-    context.goNamed(
-      ScreenType.home.name,
-    );
-  }
+  static void tap(BuildContext context) => context.goNamed(
+        ScreenType.home.name,
+      );
 }

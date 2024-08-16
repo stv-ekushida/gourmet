@@ -11,10 +11,9 @@ import 'package:mobile_app/ui/features/routers/screen_type.dart';
 class AreaSelectController {
   const AreaSelectController._();
 
-  static void tap(BuildContext context, ButtonInfo buttonInfo) {
-    context.goNamed(
-      ScreenType.prefectures.name,
-      extra: buttonInfo,
-    );
-  }
+  static void tap(BuildContext context, ButtonInfo buttonInfo) =>
+      context.goNamed(
+        ScreenType.prefectures.name,
+        extra: buttonInfo,
+      );
 }
