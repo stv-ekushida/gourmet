@@ -1,0 +1,7 @@
+name: gourmet
+packages:
+  - packages/*
+
+command:
+  bootstrap:
+    usePubspecOverrides: true  
