@@ -5,9 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 // Project imports:
-import 'package:mobile_app/ui/components/parts/texts/sub_title.dart';
-import 'package:mobile_app/ui/components/sections/areas/area_select_section.dart';
+import 'package:mobile_app/ui/components/texts/sub_title.dart';
 import 'package:mobile_app/ui/features/areas/controllers/area_select_controller.dart';
+import 'package:mobile_app/ui/features/areas/screens/area_select_section.dart';
 
 class AreaSelectFrame extends StatelessWidget {
   const AreaSelectFrame({super.key});

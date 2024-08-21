@@ -1,5 +1,9 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
+import 'package:mobile_app/ui/features/bookmark/screens/bookmark_screen.dart';
+
+// Project imports:
+import 'package:mobile_app/ui/features/gourmet/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -11,12 +15,15 @@ class HomeScreen extends StatefulWidget {
 class _HomeScreenState extends State<HomeScreen> {
   int selectedIndex = 0;
 
+  final List<Widget> _screens = [
+    const SearchScreen(),
+    const BookMarkScreen(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('東京'),
-      ),
+      body: _screens[selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         items: const [
           BottomNavigationBarItem(
@@ -26,10 +33,6 @@ class _HomeScreenState extends State<HomeScreen> {
           BottomNavigationBarItem(
             icon: Icon(Icons.bookmark_border),
             label: 'ブックマーク',
-          ),
-          BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: '設定',
           ),
         ],
         currentIndex: selectedIndex,

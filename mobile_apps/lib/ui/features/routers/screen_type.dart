@@ -5,4 +5,5 @@ enum ScreenType {
 
   /// Gourmet
   home,
+  detail,
 }

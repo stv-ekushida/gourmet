@@ -1,0 +1,201 @@
+{
+    "results": {
+      "api_version": "1.30",
+      "results_available": 2912,
+      "results_returned": "2",
+      "results_start": 1,
+      "shop": [
+        {
+          "id": "J003474681",
+          "name": "全席完全個室 名産日本酒と海鮮と寿司居酒屋 名物家 有楽町本店",
+          "logo_image": "https://imgfp.hotp.jp/IMGH/51/86/P041675186/P041675186_69.jpg",
+          "name_kana": "ぜんせきかんぜんこしつ　めいさんにほんしゅとかいせんとすしいざかや　めいぶつやゆうらくちょうほんてん",
+          "address": "東京都千代田区有楽町１-2-11 オーキッドスクエア4階",
+          "station_name": "有楽町",
+          "ktai_coupon": 0,
+          "large_service_area": {
+            "code": "SS10",
+            "name": "関東"
+          },
+          "service_area": {
+            "code": "SA11",
+            "name": "東京"
+          },
+          "large_area": {
+            "code": "Z011",
+            "name": "東京"
+          },
+          "middle_area": {
+            "code": "Y005",
+            "name": "銀座・有楽町・新橋・築地・月島"
+          },
+          "small_area": {
+            "code": "X015",
+            "name": "有楽町"
+          },
+          "lat": 35.6726192761,
+          "lng": 139.7600626615,
+          "genre": {
+            "name": "居酒屋",
+            "catch": "銘柄日本酒と海鮮と肉寿司が旨い居酒屋",
+            "code": "G001"
+          },
+          "sub_genre": {
+            "name": "和食",
+            "code": "G004"
+          },
+          "budget": {
+            "code": "B003",
+            "name": "3001～4000円",
+            "average": "飲み放題付コースは3000円から"
+          },
+          "catch": "各地の銘柄日本酒取り揃え 産地直送の海鮮料理に舌鼓",
+          "capacity": 110,
+          "access": "■有楽町駅から徒歩2分　3時間飲み放題付3300円~！　カラオケ付き個室もご用意◎",
+          "mobile_access": "有楽町駅から徒歩2分 3時間飲み放題付3300円~!",
+          "urls": {
+            "pc": "https://www.hotpepper.jp/strJ003474681/?vos=nhppalsa000016"
+          },
+          "photo": {
+            "pc": {
+              "l": "https://imgfp.hotp.jp/IMGH/51/89/P041675189/P041675189_238.jpg",
+              "m": "https://imgfp.hotp.jp/IMGH/51/89/P041675189/P041675189_168.jpg",
+              "s": "https://imgfp.hotp.jp/IMGH/51/89/P041675189/P041675189_58_s.jpg"
+            },
+            "mobile": {
+              "l": "https://imgfp.hotp.jp/IMGH/51/89/P041675189/P041675189_168.jpg",
+              "s": "https://imgfp.hotp.jp/IMGH/51/89/P041675189/P041675189_100.jpg"
+            }
+          },
+          "open": "月～金、祝前日: 11:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:00）土、日: 16:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:00）祝日: 13:00～翌0:00 （料理L.O. 23:00 ドリンクL.O. 23:00）",
+          "close": "なし",
+          "party_capacity": 110,
+          "other_memo": "お誕生日や記念日など誰かのお祝いに、サプライズケーキをご用意いたします。",
+          "shop_detail_memo": "コースはゆったり3時間コース～ご用意しております。",
+          "budget_memo": "",
+          "wedding": "お気軽にご相談下さい。",
+          "course": "あり",
+          "free_drink": "あり ：単品飲み放題1500円。もちろんコースも飲み放題付です。",
+          "free_food": "なし ：食べ放題メニューのご用意はございません。",
+          "private_room": "あり ：半個室・区切られたスペースのお席がございます。",
+          "horigotatsu": "あり ：掘りごたつ席ございます。女子会やママ会に好評です。",
+          "tatami": "なし ：お座敷ご用意ございます。宴会に大変人気なお部屋となっております。",
+          "card": "利用可",
+          "non_smoking": "禁煙席なし",
+          "charter": "貸切可 ：フロア貸切可能です。",
+          "parking": "なし ：近隣のパーキングをご利用ください。",
+          "barrier_free": "なし ：お手伝いが必要な際はお気軽にご連絡ください。",
+          "show": "なし",
+          "karaoke": "なし",
+          "band": "不可",
+          "tv": "あり",
+          "lunch": "あり",
+          "midnight": "営業していない",
+          "english": "なし",
+          "pet": "不可",
+          "child": "お子様連れOK ：ゆったり席のご用意もございます",
+          "wifi": "未確認",
+          "coupon_urls": {
+            "pc": "https://www.hotpepper.jp/strJ003474681/map/?vos=nhppalsa000016",
+            "sp": "https://www.hotpepper.jp/strJ003474681/scoupon/?vos=nhppalsa000016"
+          }
+        },
+        {
+          "id": "J003297950",
+          "name": "俺の割烹　銀座本店",
+          "logo_image": "https://imgfp.hotp.jp/IMGH/51/81/P042305181/P042305181_69.jpg",
+          "name_kana": "おれのかっぽう　ぎんざほんてん",
+          "address": "東京都中央区銀座１-5-10 銀座ファーストファイブビル3階",
+          "station_name": "新橋",
+          "ktai_coupon": 0,
+          "large_service_area": {
+            "code": "SS10",
+            "name": "関東"
+          },
+          "service_area": {
+            "code": "SA11",
+            "name": "東京"
+          },
+          "large_area": {
+            "code": "Z011",
+            "name": "東京"
+          },
+          "middle_area": {
+            "code": "Y005",
+            "name": "銀座・有楽町・新橋・築地・月島"
+          },
+          "small_area": {
+            "code": "X010",
+            "name": "東銀座"
+          },
+          "lat": 35.6745925723,
+          "lng": 139.766938666,
+          "genre": {
+            "name": "和食",
+            "catch": "俺のシリーズから「割烹」ジャンル登場♪",
+            "code": "G004"
+          },
+          "sub_genre": {
+            "name": "居酒屋",
+            "code": "G001"
+          },
+          "budget": {
+            "code": "B004",
+            "name": "5001～7000円",
+            "average": "5000円"
+          },
+          "catch": "7/27リニューアルオープン 記念日サプライズはお任せ",
+          "capacity": 90,
+          "access": "有楽町駅より徒歩4分/銀座一丁目駅より徒歩1分",
+          "mobile_access": "有楽町駅より徒歩4分/銀座一丁目駅より徒歩1分",
+          "urls": {
+            "pc": "https://www.hotpepper.jp/strJ003297950/?vos=nhppalsa000016"
+          },
+          "photo": {
+            "pc": {
+              "l": "https://imgfp.hotp.jp/IMGH/29/31/P042752931/P042752931_238.jpg",
+              "m": "https://imgfp.hotp.jp/IMGH/29/31/P042752931/P042752931_168.jpg",
+              "s": "https://imgfp.hotp.jp/IMGH/29/31/P042752931/P042752931_58_s.jpg"
+            },
+            "mobile": {
+              "l": "https://imgfp.hotp.jp/IMGH/29/31/P042752931/P042752931_168.jpg",
+              "s": "https://imgfp.hotp.jp/IMGH/29/31/P042752931/P042752931_100.jpg"
+            }
+          },
+          "open": "月～木: 17:00～22:30 （料理L.O. 21:30 ドリンクL.O. 22:00）金: 17:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:15）土: 16:00～23:00 （料理L.O. 22:00 ドリンクL.O. 22:15）日: 16:00～22:00 （料理L.O. 21:00 ドリンクL.O. 21:15）祝日: 16:00～22:30 （料理L.O. 21:30 ドリンクL.O. 21:45）",
+          "close": "なし",
+          "party_capacity": 90,
+          "other_memo": "",
+          "shop_detail_memo": "",
+          "budget_memo": "全席ワンドリンク制、お１人様につきお通し代500円頂戴します。",
+          "wedding": "",
+          "course": "あり",
+          "free_drink": "あり",
+          "free_food": "なし",
+          "private_room": "なし",
+          "horigotatsu": "なし",
+          "tatami": "なし",
+          "card": "利用可",
+          "non_smoking": "全面禁煙",
+          "charter": "貸切不可",
+          "parking": "なし",
+          "barrier_free": "なし",
+          "show": "なし",
+          "karaoke": "なし",
+          "band": "不可",
+          "tv": "なし",
+          "lunch": "なし",
+          "midnight": "営業していない",
+          "english": "あり",
+          "pet": "不可",
+          "child": "お子様連れ歓迎",
+          "wifi": "未確認",
+          "coupon_urls": {
+            "pc": "https://www.hotpepper.jp/strJ003297950/map/?vos=nhppalsa000016",
+            "sp": "https://www.hotpepper.jp/strJ003297950/scoupon/?vos=nhppalsa000016"
+          }
+        }
+
+      ]
+    }
+  }

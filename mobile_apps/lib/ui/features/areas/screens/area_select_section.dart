@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:mobile_app/ui/components/parts/buttons/square_button.dart';
+import 'package:mobile_app/ui/components/buttons/square_button.dart';
 
 class AreaSelectSection extends StatelessWidget {
   const AreaSelectSection({
