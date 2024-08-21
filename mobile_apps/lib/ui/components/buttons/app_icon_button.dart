@@ -2,7 +2,8 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:mobile_app/foundation/app_colors.dart';
+import 'package:mobile_app/tokens/app_color.dart';
+import 'package:mobile_app/tokens/app_size.dart';
 
 class AppIconButton extends StatelessWidget {
   const AppIconButton({
@@ -21,7 +22,7 @@ class AppIconButton extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        width: 44,
+        width: AppSize.size44,
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color: Colors.white,
@@ -30,7 +31,7 @@ class AppIconButton extends StatelessWidget {
         child: Icon(
           icon,
           size: 30,
-          color: active == true ? AppColors.primaryColor : Colors.grey,
+          color: active == true ? AppColor.primaryColor : Colors.grey,
         ),
       ),
     );

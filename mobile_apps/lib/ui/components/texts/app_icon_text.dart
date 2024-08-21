@@ -5,7 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 
 // Project imports:
-import 'package:mobile_app/foundation/app_colors.dart';
+import 'package:mobile_app/tokens/app_size.dart';
+import 'package:mobile_app/ui/components/spaces/app_gap.dart';
 import 'package:mobile_app/ui/components/texts/app_text.dart';
 
 class AppIconText extends StatelessWidget {
@@ -22,13 +23,13 @@ class AppIconText extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       children: [
-        const Gap(4),
+        AppGap.m(),
         Icon(
           icon,
-          size: 16,
+          size: AppSize.size16,
           color: Colors.grey[600],
         ),
-        const Gap(4),
+        AppGap.m(),
         Flexible(
           child: AppText.labelSmall(title),
         ),

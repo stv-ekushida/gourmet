@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:mobile_app/foundation/app_font_size.dart';
+import 'package:mobile_app/foundation/app_typography.dart';
 
 class AppText extends Text {
   const AppText._(
@@ -20,7 +20,7 @@ class AppText extends Text {
       title,
       style: style ??
           const TextStyle(
-            fontSize: AppFontSize.titleMedium,
+            fontSize: AppTypography.titleMedium,
             fontWeight: FontWeight.w600,
           ),
       softWrap: softWrap ?? true,
@@ -33,7 +33,7 @@ class AppText extends Text {
       softWrap: true,
       style: style ??
           TextStyle(
-            fontSize: AppFontSize.titleSmall,
+            fontSize: AppTypography.titleSmall,
             color: Colors.grey[600],
           ),
     );

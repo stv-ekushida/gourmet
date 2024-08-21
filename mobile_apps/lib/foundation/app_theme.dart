@@ -5,8 +5,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 // Project imports:
-import 'package:mobile_app/foundation/app_colors.dart';
 import 'package:mobile_app/foundation/app_text_theme.dart';
+import 'package:mobile_app/tokens/app_color.dart';
 
 final appThemeProvider = Provider<AppTheme>((ref) {
   return AppTheme.light();
@@ -39,7 +39,7 @@ class AppTheme {
       elevatedButtonTheme: ElevatedButtonThemeData(
         style: ElevatedButton.styleFrom(
           foregroundColor: Colors.white,
-          backgroundColor: AppColors.neutralColor,
+          backgroundColor: AppColor.neutralColor,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(8),
           ),
@@ -58,12 +58,12 @@ class AppTheme {
       ),
       textButtonTheme: TextButtonThemeData(
         style: TextButton.styleFrom(
-          foregroundColor: AppColors.primaryColor,
+          foregroundColor: AppColor.primaryColor,
         ),
       ),
       tabBarTheme: TabBarTheme(
-        labelColor: AppColors.primaryColor,
-        indicatorColor: AppColors.primaryColor,
+        labelColor: AppColor.primaryColor,
+        indicatorColor: AppColor.primaryColor,
         unselectedLabelColor: Colors.grey[500],
       ),
       cardTheme: const CardTheme(
@@ -87,11 +87,11 @@ class AppTheme {
         ),
         border: OutlineInputBorder(),
         errorStyle: TextStyle(
-          color: AppColors.errorColor,
+          color: AppColor.errorColor,
         ),
       ),
       switchTheme: SwitchThemeData(
-        thumbColor: WidgetStateProperty.all(AppColors.primaryColor),
+        thumbColor: WidgetStateProperty.all(AppColor.primaryColor),
         trackColor: WidgetStateProperty.all(Colors.grey[200]),
         trackOutlineColor: WidgetStateProperty.all(Colors.grey[200]),
       ),
@@ -101,7 +101,7 @@ class AppTheme {
         space: 0,
       ),
       progressIndicatorTheme: const ProgressIndicatorThemeData(
-        color: AppColors.primaryColor,
+        color: AppColor.primaryColor,
       ),
     );
 

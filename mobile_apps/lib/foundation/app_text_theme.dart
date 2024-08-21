@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 
 // Project imports:
-import 'package:mobile_app/foundation/app_font_size.dart';
+import 'package:mobile_app/foundation/app_typography.dart';
 
 class AppTextTheme {
   const AppTextTheme._({
@@ -24,24 +24,24 @@ class AppTextTheme {
     );
 
     return AppTextTheme._(
-      titleLarge: const TextStyle(fontSize: AppFontSize.titleLarge)
+      titleLarge: const TextStyle(fontSize: AppTypography.titleLarge)
           .merge(baseTextStyle),
-      titleMedium: const TextStyle(fontSize: AppFontSize.titleMedium)
+      titleMedium: const TextStyle(fontSize: AppTypography.titleMedium)
           .merge(baseTextStyle),
-      titleSmall: const TextStyle(fontSize: AppFontSize.titleSmall)
+      titleSmall: const TextStyle(fontSize: AppTypography.titleSmall)
           .merge(baseTextStyle),
-      labelLarge: const TextStyle(fontSize: AppFontSize.labelLarge)
+      labelLarge: const TextStyle(fontSize: AppTypography.labelLarge)
           .merge(baseTextStyle),
-      labelMedium: const TextStyle(fontSize: AppFontSize.labelMedium)
+      labelMedium: const TextStyle(fontSize: AppTypography.labelMedium)
           .merge(baseTextStyle),
-      labelSmall: const TextStyle(fontSize: AppFontSize.labelSmall)
+      labelSmall: const TextStyle(fontSize: AppTypography.labelSmall)
           .merge(baseTextStyle),
-      bodyLarge:
-          const TextStyle(fontSize: AppFontSize.bodyLarge).merge(baseTextStyle),
-      bodyMedium: const TextStyle(fontSize: AppFontSize.bodyMedium)
+      bodyLarge: const TextStyle(fontSize: AppTypography.bodyLarge)
           .merge(baseTextStyle),
-      bodySmall:
-          const TextStyle(fontSize: AppFontSize.bodySmall).merge(baseTextStyle),
+      bodyMedium: const TextStyle(fontSize: AppTypography.bodyMedium)
+          .merge(baseTextStyle),
+      bodySmall: const TextStyle(fontSize: AppTypography.bodySmall)
+          .merge(baseTextStyle),
     );
   }
 

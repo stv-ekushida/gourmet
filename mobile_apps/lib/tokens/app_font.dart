@@ -1,4 +1,4 @@
-class FontSize {
+class AppFont {
   static const double size10 = 10.0;
   static const double size11 = 11.0;
   static const double size12 = 12.0;

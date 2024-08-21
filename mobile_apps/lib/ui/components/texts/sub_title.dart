@@ -1,6 +1,9 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
 
+// Project imports:
+import 'package:mobile_app/foundation/app_typography.dart';
+
 class SubTitle extends StatelessWidget {
   const SubTitle({
     super.key,
@@ -18,7 +21,7 @@ class SubTitle extends StatelessWidget {
         style: const TextStyle(
           color: Colors.black,
           fontWeight: FontWeight.bold,
-          fontSize: 20,
+          fontSize: AppTypography.titleLarge,
         ),
         children: [
           TextSpan(
@@ -29,7 +32,7 @@ class SubTitle extends StatelessWidget {
             style: const TextStyle(
               fontWeight: FontWeight.normal,
               color: Colors.grey,
-              fontSize: 14,
+              fontSize: AppTypography.titleSmall,
             ),
           ),
         ],

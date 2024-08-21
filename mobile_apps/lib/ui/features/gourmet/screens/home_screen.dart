@@ -1,8 +1,9 @@
 // Flutter imports:
 import 'package:flutter/material.dart';
-import 'package:mobile_app/ui/features/bookmark/screens/bookmark_screen.dart';
 
 // Project imports:
+import 'package:mobile_app/tokens/app_color.dart';
+import 'package:mobile_app/ui/features/bookmark/screens/bookmark_screen.dart';
 import 'package:mobile_app/ui/features/gourmet/screens/search_screen.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -36,7 +37,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ],
         currentIndex: selectedIndex,
-        fixedColor: Colors.red,
+        fixedColor: AppColor.primaryColor,
         onTap: (index) {
           setState(() {
             selectedIndex = index;

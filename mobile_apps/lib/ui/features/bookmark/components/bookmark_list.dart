@@ -7,7 +7,11 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 // Project imports:
 import 'package:mobile_app/data/local/bookmark/bookmark_repository.dart';
 import 'package:mobile_app/data/model/shop_list/shop_list.dart';
+import 'package:mobile_app/tokens/app_color.dart';
+import 'package:mobile_app/tokens/app_size.dart';
+import 'package:mobile_app/ui/components/spaces/app_padding.dart';
 import 'package:mobile_app/ui/components/texts/app_text.dart';
+import 'package:mobile_app/ui/features/bookmark/components/bookmark_empty.dart';
 import 'package:mobile_app/ui/features/gourmet/components/gourmet_card.dart';
 
 class BookList extends ConsumerWidget {
@@ -17,53 +21,37 @@ class BookList extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final shopDataAsyncValue = ref.watch(bookmarkDataProvider);
+    final shopListAsyncValue = ref.watch(bookmarkDataProvider);
 
-    return shopDataAsyncValue.when(
+    return shopListAsyncValue.when(
       data: (data) {
-        final List<Shop> shopData = data.results.shop;
+        final List<Shop> shopList = data.results.shop;
 
         return Column(
           children: [
             Container(
               width: double.infinity,
-              height: 44,
-              padding: const EdgeInsets.all(8),
-              color: Colors.grey[100],
+              height: AppSize.size44,
+              padding: AppPadding.m,
+              color: AppColor.lightGrey,
               child: AppText.titleMedium('${data.results.resultsReturned}件'),
             ),
             Expanded(
               child: Padding(
-                padding: const EdgeInsets.all(8.0),
-                // child: Center(
-                //   child: Padding(
-                //     padding: const EdgeInsets.all(32.0),
-                //     child: Column(
-                //       mainAxisAlignment: MainAxisAlignment.center,
-                //       children: [
-                //         const Icon(
-                //           Icons.bookmark_outline,
-                //           size: 88,
-                //         ),
-                //         AppText.titleMedium('まだブックマークはありません'),
-                //         const Gap(32),
-                //         AppText.labelSmall('お店のブックマークアイコンを押すと、ブックマークできます。')
-                //       ],
-                //     ),
-                //   ),
-                // ),
-
-                child: ListView.builder(
-                  shrinkWrap: true,
-                  itemCount: shopData.length,
-                  itemBuilder: (context, index) {
-                    final shop = shopData[index];
-                    return GourmetCard(
-                      shop: shop,
-                      active: true,
-                    );
-                  },
-                ),
+                padding: AppPadding.m,
+                child: shopList.isEmpty
+                    ? const BookmarkEmpty()
+                    : ListView.builder(
+                        shrinkWrap: true,
+                        itemCount: shopList.length,
+                        itemBuilder: (context, index) {
+                          final shop = shopList[index];
+                          return GourmetCard(
+                            shop: shop,
+                            active: true,
+                          );
+                        },
+                      ),
               ),
             ),
           ],
